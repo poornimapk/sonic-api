@@ -39,10 +39,6 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 })
 
-app.listen(PORT, () => {
-    console.log(`The server is running on port ${PORT}! You better go catch it!`);
-})
-
 app.get("/api/:characterName", (req, res) => {
     console.log(req.params.characterName);
     const characterName = req.params.characterName.toLowerCase();
@@ -51,4 +47,8 @@ app.get("/api/:characterName", (req, res) => {
     }  else {
         res.json(characters['donut lord']);
     }
+})
+
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`The server is running on port ${PORT}! You better go catch it!`);
 })
