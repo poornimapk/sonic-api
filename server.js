@@ -19,7 +19,7 @@ const characters = {
     "tails": {
         "name": "Miles Prower",
         "alias": "Tails",
-        "powers": "Two-tailed fox, who can propel himmself into the air like helicopter and has a very high IQ"
+        "powers": "Two-tailed fox, who can propel himself into the air like helicopter and has a very high IQ"
     },
     "metal sonic": {
         "name": "Metal Sonic",
